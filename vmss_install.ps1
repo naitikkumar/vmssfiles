@@ -31,5 +31,5 @@ New-WebSite -Name "mysite" -Port 80  -PhysicalPath "$env:systemdrive\inetpub\www
 #$SourceURL = "https://redirector.gvt1.com/edgedl/release2/chrome/VM7AZGvxTD3eRDzvxYLSvg_86.0.4240.75/86.0.4240.75_chrome_installer.exe"
 #$Installer = $env:TEMP + "\chrome.exe"
 #Invoke-WebRequest $SourceURL -OutFile $Installer
-#Start-Process -FilePath $Installer -Args "/s" -Verb RunAs -Wait
+#Start-Process -FilePath $Installer -Args "/s" -Verb  -Wait -PassThru
 #Remove-Item -Path $Installer -Recurse -Force
