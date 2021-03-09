@@ -37,9 +37,9 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
-  - job: Build
+  - job: artifact
     displayName: Zip and archive artifact
-    dependsOn: Build
+    dependsOn: Build artifact
     pool:
      vmImage: $(vmImageName)
     steps:
