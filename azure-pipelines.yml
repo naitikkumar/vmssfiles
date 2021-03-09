@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: 'd759f489-ebc5-4440-8535-a4c4fb8866d0'
   imageRepository: 'yoga'
   containerRegistry: 'mydemoreg.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/**/Dockerfile'
+  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
