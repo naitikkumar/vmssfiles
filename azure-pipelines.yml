@@ -39,7 +39,7 @@ stages:
           $(tag)
   - job: artifact
     displayName: Zip and archive artifact
-    dependsOn: Build artifact
+    dependsOn: Build
     pool:
      vmImage: $(vmImageName)
     steps:
